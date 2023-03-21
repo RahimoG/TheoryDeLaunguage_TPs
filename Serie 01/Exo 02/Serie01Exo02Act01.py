@@ -1,3 +1,4 @@
+# using Lists :
 def crange(*cintrev):
     res_list = []
     for my_list in cintrev:
@@ -7,6 +8,7 @@ def crange(*cintrev):
 print("Crange V1 : "+crange(["a", "z"],["A", "Z"], ["0", "9"]))
 
 
+# using String :
 def crangeV2(*cintrev):
     ch = ""
     for my_list in cintrev:
@@ -16,45 +18,11 @@ def crangeV2(*cintrev):
 print("Crange V2 : "+crangeV2(["a", "z"],["A", "Z"], ["0", "9"]))
 
 
-
-
-
-
-
-
-
-
-
-
-
-## Theory : 
-# return ascii en entier : ord("A") 
-# chr(64)
-# function : 
-# print(crange(["A", "Z"], ["0", "9"]))
-
-# list comprehention : 
-A = ["A", "Z"], ["0", "9"]
-
+# using List comperehention : 
+A = (["a", "z"],["A", "Z"], ["0", "9"])
 res_list = [
     chr(i)
     for my_list in A
         for i in range(ord(my_list[0]), ord(my_list[1])+1)
 ]
-#print("".join(res_list))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("Crange V3 : " + "".join(res_list))
