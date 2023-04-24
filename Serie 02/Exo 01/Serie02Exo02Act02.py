@@ -8,4 +8,4 @@ def factors(word):
     return resList
 
 
-print(factors("hel"))
+print(factors("hello"))
